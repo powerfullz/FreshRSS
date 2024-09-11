@@ -674,11 +674,8 @@ class SimplePie_Sanitize
 	protected function rename_attr($attrib, $xpath)
 	{
 		$elements = $xpath->query('//*[@' . $attrib . ']');
-
-		foreach ($elements as $element)
-		{
-			$element->setAttribute('' . $attrib, $element->getAttribute($attrib));
-			$element->removeAttribute($attrib);
+		foreach ($elements as $element){
+			console.log('None.')
 		}
 	}
 
